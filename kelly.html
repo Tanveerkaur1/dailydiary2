@@ -1,0 +1,100 @@
+  
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+           <style>
+            .overlay-container {
+              position: relative;
+              text-align: center;
+            }
+        
+            .overlay-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+            }
+        
+            .container h1,h2{
+              font-size: 40px;
+              font-weight: 700;
+            }
+            #about{
+              border-top-left-radius: 50px;
+              border-top-right-radius: 30%;
+            }
+           @keyframes  overlay-text{
+            0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+  }
+  .animated-text {
+    animation: overlay-text 10s 4;
+    
+  }         
+ 
+           </style>
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                  <h5 class="heading1 text-light">BOOTSTRAPMADE</h5>
+                </div>
+              </nav>
+        
+            <nav class="navbar navbar-expand-lg bg-body-tertiary background-color- ">
+                <a class="navbar-brand text-dark fs-1 font-monospace" href="#">Anamika</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active fw-bold" aria-current="page" href="kelly.html"><i>Home</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <a class="nav-link" href="about.html"><i>About</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <a class="nav-link" href="resume.html"><i>Resume</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <a class="nav-link" href="contact.html"><i>Contact</i></a>
+                    </li>
+                  </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" class="mx-3" width="2%" height="1%">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-icon-logo-png-transparent.png" width="2%" height="1%" class="mx-4">
+                <img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" width="2%" height="1%" class="mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&s" width="2%" height="1%" class="mx-3">
+            </nav>
+        
+            <div class="container overlay-container">
+              <img src="https://static.vecteezy.com/system/resources/previews/003/492/119/non_2x/woman-working-on-laptop-in-the-office-looking-at-the-screen-and-typing-image-free-photo.jpg" class="img-fluid" alt="...">
+              <div class="overlay-text">
+                <h1  class= "animated-text"  style="color: black;">Hey</h1>
+                <h2 class="animated-text"    style="color:black ;">I am a student</h2>
+                <button id="about " style="background-color: rgb(91, 91, 138);"  > <a href="about.html" >about me</a> </button>
+              
+              </div>
+            </div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        </body>
+        </html>
+        

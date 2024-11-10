@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="employees"></div>
+    <script>
+      const fetchData = async () => {
+        try {
+          const response = await fetch("https://dummyjson.com/users");
+          const data = await response.json();
+          console.log(data.users);
+
+          const container = document.getElementById("employees");
+
+          data.users.forEach((User) => {
+
+            
+            const firstName = User.firstName;
+            const firstNameElement = document.createElement("p");
+            firstNameElement.innerText = firstName;
+            container.appendChild(firstNameElement);
+
+
+
+            const lastName = User.lastName;
+            const lastNameElement = document.createElement("p");
+            lastNameElement.innerText = lastName;
+            container.appendChild(lastNameElement);
+
+            const gender = User.gender;
+            const genderElement = document.createElement("p");
+            genderElement.innerText = gender;
+            container.appendChild(genderElement);
+
+            const email = User.email;
+            const emailElement = document.createElement("p");
+            emailElement.innerText = email;
+            container.appendChild(emailElement);
+
+            const phone = User.phone;
+            const phoneElement = document.createElement("p");
+            phoneElement.innerText = phone;
+            container.appendChild(phoneElement);
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      fetchData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.square{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    animation:  rotate 10s 2 linear;
+    position: relative;
+}
+
+@keyframes rotate{
+        0%{
+            transform: rotate(0deg);left: 0px;top: 0px;
+        }25%{
+            transform: rotate(90deg);left: 400px; top: 0;
+        }50%{
+            transform: rotate(180deg); left: 400px;top: 350px;
+        }75%{
+            transform: rotate(-90deg);left: 0;top: 350px;
+        }100%{
+            transform: rotate(360deg);left: 0;top: 0;
+        }  
+        
+        }
+
+ 
+    

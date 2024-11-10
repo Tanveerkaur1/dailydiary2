@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+   
+
+        .video-container {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        #mainVideo {
+            width: 100%;
+        }
+
+        .overlay-frame {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15%;
+            border: 2px solid #fff;
+        }
+
+        #overlayVideo {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+       
+        .new-frame {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            
+            width: 200px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            border: 2px solid red; /* Adjust border as needed */
+        }.time{
+            position: absolute;
+            /* upr rkhna to absolute */
+            /* relative */
+            top: 290px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="mainVideo" controls>
+            <source src="istockphoto-1456460315-640_adpp_is.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-frame">
+            <video id="overlayVideo" muted autoplay loop>
+                <source src="istockphoto-1456460315-640_adpp_is.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="newFrame" class="new-frame" style="display: none;"></div>
+        <div class="time" style="display: inline; " >9:00</div>
+    </div>
+
+</body>
+</html>

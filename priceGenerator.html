@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+       
+        .container{
+            
+            width: 400px;
+            border-radius: 30px;
+            border: 15px solid black;
+            margin: 70px auto;
+            padding: 20px;
+            background-color: rgb(225, 232, 11);
+            box-shadow:  20px 20px 10px rgb(56, 58, 58);
+        }
+        .heading{
+            text-align: center;
+            color: blue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style:oblique;
+            text-decoration-line: underline;
+            
+           
+        }.heading:hover{
+           color: brown;
+           font-family: Georgia, 'Times New Roman', Times, serif;   
+        }.input{
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            
+        }.input:hover{
+            color: rgb(56, 18, 210);
+            font-family: fantasy;
+
+        }#totalPrice{
+            margin-top: 10px;
+            font-size: 20px;
+        }label{
+            margin-bottom: px;
+            font-weight: bold; 
+        }
+        #totalPrice:hover{
+            color: rgb(56, 18, 210);
+            font-family: fantasy;
+        }.tp:hover{
+            color: rgb(56, 18, 210);
+            font-family: fantasy;
+        }.tp{
+            display: inline;
+            row-gap: 30px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+        }#price1,#price2{
+            font-size: 13px;
+            padding: 5px;
+
+            
+        }#btn2{
+            justify-content: center;
+            text-align: center;
+            color:rgb(7, 7, 128) ;
+            background-color: lightgray;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-color: rgb(40, 40, 31);
+            font-style: oblique;
+            margin-top: 25px;
+            padding: 10px;
+            cursor: pointer;
+
+        }#btn2:hover{
+            color: rgb(221, 20, 70);
+            background-color: aqua;
+            font-family: fantasy;
+        }
+.button{
+    text-align: center;
+}
+
+    </style>
+ 
+</head>
+<body style="background-color: aqua; ">
+    <div class="container">
+        <h1 class="heading">Bill Generator</h1>
+       <div class="input">
+        <label for="price1">Price of First item $:   </label>
+        <input type="Number" id="price1" placeholder="Enter the price 1st item :$">
+    </div>
+        
+        <br>
+        <br>
+        <div class="input">
+            <label for="price2">Price of 2nd item $: </label>
+        <input type="Number" id="price2" placeholder="Enter the price 2nd item :$ ">
+    </div>
+        <br><br>
+        <div class="tp">
+            <label for="totalPrice">TotalPrice $: </label>
+            <input type="number" id="totalPrice" placeholder=" your total price is :$ ">
+        </div>
+<br><br>
+<div class="button">
+        <button id="btn2">Calculate Total Amount</button>
+
+
+    </div>
+
+
+
+
+    <script src="priceGenerator.js"></script>    
+</body>
+</html>

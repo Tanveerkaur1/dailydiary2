@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .para{
+        background-color: aquamarine;
+    }
+    .show{
+    background-color: beige; 
+    border: 10px rgb(212, 20, 20) groove;
+    height: 30px;
+    width: 40px;
+}
+.info{
+    margin: 20px;
+    border: 2px rgb(212, 20, 20) solid;
+    justify-content: center;
+   
+    box-shadow:aqua;
+
+   
+
+}
+.parent,.left,.right,h1{
+    display: inline;
+ }
+.navbar{
+    background-color: rgb(138, 83, 10);
+     display: flex;
+     align-items: center;
+     /* justify-content: space-between; */
+     /* justify-content: space-evenly; */
+     justify-content: space-around;
+     flex-wrap: wrap;
+     /*  for spacce more, move to next line */
+    
+}.links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    /* gap work with flex */
+    /* justify content -  flex property */
+}.right-section,.deco{
+   border-radius: 20%;
+   background-color: aqua;
+}
+/* position absolute & position relative */
+
+  </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <h2 class="logo">LOGOBAKERY</h2>
+
+        </div>
+        <div class="center">
+            <ul class = "links">
+            <li class="items">services</li>
+            <li class="items">about</li>
+            <li class="items">section</li>
+        </ul>
+        </div>
+        <div class = "right-section">
+            <button class="deco">contact</button>
+        </div>
+    </div>
+    <table class = "info">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>aDdress</th>
+        </tr>
+        <tr>
+           <td>anamika</td>
+           <td>20</td>
+           <td>femalw</td>
+           <td>bihar</td>
+        </tr>
+        <tr>
+            <td>aarsh</td>
+            <td>20</td>
+            <td>female</td>
+            <td>punjab</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Natus ab iste velit ducimus cumque necessitatibus illum voluptate animi sit maxime?</p>
+        <div class="para"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Eos rerum, repudiandae temporibus eaque, aut harum illum facere quidem ipsa, vitae expedita dolores animi ratione praesentium sed explicabo. 
+                Assumenda amet itaque explicabo dolore at voluptatibus laboriosam impedit et quidem beatae quia tempora deleniti eveniet ex sapiente, 
+                ducimus cupiditate eius consequuntur nobis.</p>
+
+        </div>
+        <div class="show"></div>
+
+
+        <div class="parent">
+            <div class = "left">
+                <h1 >left section</h1>
+            </div>
+         
+              <div class="right"> <h1>right</h1></div> 
+            
+        </div>
+        <br>
+        <br>
+        <h3 style=" display: inline;">HEading3</h3>
+        <h3 style="display: inline;">HEading3</h3>
+
+        <a href="">Go to </a>
+        <a href="">Go to </a>
+</body>
+</html>

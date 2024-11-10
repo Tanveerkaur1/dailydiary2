@@ -1,0 +1,144 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+}
+
+.name {
+    
+    color: rgb(27, 22, 19);
+    width: 100%;
+    height: 50px;
+    font-size: 6em;
+    margin-bottom: 5px;
+    align-items:center ;
+    
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    width: 100vw;
+    
+}
+
+header {
+    background-color: #5b8595;
+    text-align: right;
+    width: 100%;
+}
+
+header .social-icons a img {
+    padding: 10px;
+    width: 96px;
+    height: 96px;
+    margin: 0 60px;
+    margin-left: 10px;
+    justify-content: space-around;
+    
+}
+.services{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+  font-size: 4rem;
+  align-items: center;
+  
+    
+}
+
+.background-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.background-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0 10px 0;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #16a01d;
+}
+
+footer {
+    font-size: 10em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#para {
+    height: 100%;
+    width: 100%;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}

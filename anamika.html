@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html page</title>
+    <style>
+        body{
+            margin: 0%;
+            padding:0%;
+        }
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        border: 1px solid gainsboro;
+      
+      }
+      .nav-links {
+        display:flex;
+       cursor: pointer;
+       list-style: none;
+       justify-content: center;
+       align-items: center;
+       color: blue;
+        font-size: 14px;
+        font-style: italic;
+        gap: 12px;
+        gap: 40px;
+      }
+      .navitem{
+        font-size: 24px;
+      }
+      .navitem:hover{
+        color:red;
+      }
+      button {
+        background-color: black;
+        color: white;
+        border: 1px solid blanchedalmond;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height:40px;
+        width: 75px;
+        font-size:18px ;
+      }
+      button:hover{
+       color: blue;
+       background-color: white; 
+      }
+      .img{
+         height: 500px;
+         width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div><h1>Logo<span class="heading" style="color:red;">Bakery</span></h1></div>
+      <div>
+        <ul class="nav-links">
+          <li class="navitem">Home</li>
+          <li class="navitem">About</li>
+          <li class="navitem">Services</li>
+          <li class="navitem">Contact</li>
+        </ul>
+      </div>
+      <div><button>Login</button></div>
+    </div class="img">
+    <img src="https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  </body>
+</html>
